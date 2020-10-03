@@ -27,7 +27,7 @@ public class Main {
     }
 
     static String transformNumberOfTens(int age) {
-        String[] numberOfTens = {"","","Двадцать ","Тридцать","Сорок ","Пятьдесят ","Шестьдесят ",
+        String[] numberOfTens = {"","","Двадцать ","Тридцать ","Сорок ","Пятьдесят ","Шестьдесят ",
                                 "Семьдесят ","Восемьдесят ","Девяносто "};
         return numberOfTens[age/10];
     }
