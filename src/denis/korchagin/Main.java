@@ -21,26 +21,27 @@ public class Main {
     }
 
     static String transformNumberFrom10To19(int age) {
-        String[] numberFrom10To19 = {"Десять ","Одиннадцать ","Двенадцать ","Тринадцать ","Четырнадцать ","Пятнадцать ",
-                                    "Шестнадцать ","Семнадцать ","Восемнадцать ","Девятнадцать "};
+        String[] numberFrom10To19 = {"десять ","одиннадцать ","двенадцать ","тринадцать ",
+                                    "четырнадцать ","пятнадцать ", "шестнадцать ","семнадцать ",
+                                    "восемнадцать ","девятнадцать "};
         return numberFrom10To19[age%10];
     }
 
     static String transformNumberOfTens(int age) {
-        String[] numberOfTens = {"","","Двадцать ","Тридцать ","Сорок ","Пятьдесят ","Шестьдесят ",
-                                "Семьдесят ","Восемьдесят ","Девяносто "};
+        String[] numberOfTens = {"","","двадцать ","тридцать ","сорок ","пятьдесят ","шестьдесят ",
+                                "семьдесят ","восемьдесят ","девяносто "};
         return numberOfTens[age/10];
     }
 
     static String transformNumberOfUnits(int age) {
-        String[] numberOfUnits = {"", "Один ", "Два ", "Три ", "Четыре ", "Пять ", "Шесть ",
-                "Семь ", "Восемь ", "Девять "};
+        String[] numberOfUnits = {"", "один ", "два ", "три ", "четыре ", "пять ", "шесть ",
+                                 "семь ", "восемь ", "девять "};
         return numberOfUnits[age % 10];
     }
 
     static String transformWordYear(int age) {
         String[] WordYear = {"лет", "год", "года", "года", "года", "лет", "лет",
-                "лет", "лет", "лет"};
+                            "лет", "лет", "лет"};
         return WordYear[age % 10];
     }
 
