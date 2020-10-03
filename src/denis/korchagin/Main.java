@@ -16,7 +16,7 @@ public class Main {
     }
 
     static String transformAgeToDescriptionString(int age) {
-        if (age>=10 && age<=19) return transformNumberFrom10To19(age) + "лет";
+        if (age >= 10 && age <= 19) return transformNumberFrom10To19(age) + "лет";
         return transformNumberOfTens(age) + transformNumberOfUnits(age) + transformWordYear(age);
     }
 
