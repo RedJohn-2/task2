@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	    int age = readAge();
+        int age = readAge();
         System.out.println(transformAgeToDescriptionString(age));
     }
 
