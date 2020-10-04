@@ -1,4 +1,4 @@
-package denis.korchagin;
+package transformationage;
 
 import java.util.Scanner;
 
