@@ -17,7 +17,7 @@ public class Main {
 
     static String transformAgeToDescriptionString(int age) {
         if (age >= 10 && age <= 19) return transformNumberFrom10To19(age) + "лет";
-        return transformNumberOfTens(age) + transformNumberOfUnits(age) + transformWordYear(age);
+        return transformCategoryOfTens(age) + transformCategoryOfUnits(age) + transformWordYear(age);
     }
 
     static String transformNumberFrom10To19(int age) {
@@ -27,16 +27,16 @@ public class Main {
         return numberFrom10To19[age%10];
     }
 
-    static String transformNumberOfTens(int age) {
-        String[] numberOfTens = {"","","двадцать ","тридцать ","сорок ","пятьдесят ","шестьдесят ",
+    static String transformCategoryOfTens(int age) {
+        String[] categoryOfTens = {"","","двадцать ","тридцать ","сорок ","пятьдесят ","шестьдесят ",
                                 "семьдесят ","восемьдесят ","девяносто "};
-        return numberOfTens[age/10];
+        return categoryOfTens[age/10];
     }
 
-    static String transformNumberOfUnits(int age) {
-        String[] numberOfUnits = {"", "один ", "два ", "три ", "четыре ", "пять ", "шесть ",
+    static String transformCategoryOfUnits(int age) {
+        String[] categoryOfUnits = {"", "один ", "два ", "три ", "четыре ", "пять ", "шесть ",
                                  "семь ", "восемь ", "девять "};
-        return numberOfUnits[age % 10];
+        return categoryOfUnits[age % 10];
     }
 
     static String transformWordYear(int age) {
